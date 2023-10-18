@@ -101,6 +101,7 @@ main img {
 a,
 a:link {
     color: rgb(77, 132, 235);
+    text-decoration: underline;
 }
 
 a:visited {
