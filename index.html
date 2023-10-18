@@ -10,112 +10,81 @@
     <link rel="icon" type="image/png" href="favicon/doc/favicon-16x16.png" sizes="16x16" />
 
     <title>portfolio</title>
-    <style>
-        :root {
-            scroll-behavior: smooth;
-        }
 
-        .center-horizonally {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .columns-container {
-            width: 100%;
-
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-        }
-
-        .columns-container div {
-            width: 50%;
-        }
-
-        .blurred-edge {
-            box-shadow: 0 18px 22px 33px white inset;
-        }
-
-        body {
-            max-width: 750px;
-            margin: 0 auto;
-            padding: 1rem;
-
-            font-family: serif;
-            font-size: large;
-        }
-
-        main {
-            line-height: 1.35em;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        h2 {
-            margin-bottom: .8rem;
-        }
-
-        ul {
-            margin-top: .7rem;
-        }
-
-        footer {
-            font-style: italic;
-            text-align: center;
-        }
-
-        time {
-            font-size: smaller;
-            font-style: normal;
-        }
-
-        em {
-            font-style: italic;
-        }
-
-        code {
-            font-family: monospace;
-            background-color: rgb(230, 230, 230);
-        }
-
-        a,
-        a:link {
-            color: rgb(77, 132, 235);
-        }
-
-        a:visited {
-            color: rgb(51, 70, 247);
-        }
-
-        a:focus,
-        a:hover {
-            color: rgb(103, 174, 233)
-        }
-
-        a:active {
-            color: rgb(51, 169, 247);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>portfolio - in progress</h1>
-        <hr>
-
+        <h1>Frederick Basken - Portfolio<span> (design in progress!)</span></h1>
     </header>
     <main>
-        <p>
-            Check back in 24-48 hours.
-        </p>
+        <hr>
+        <section>
+            <h2>Niraya</h2>
+            <p>
+                Led a four-person team to create a 2D computer game, written in C# using the MonoGame framework (Microsoft XNA) and .NET.
+            </p>
+            <p>
+                I took on a major leadership role, writing the game’s entire architecture from scratch, including the 2D tilemap framework, kinematic camera, entity logic, and animation system. I integrated a third-party level editor, <em><a href="https://www.mapeditor.org/" target="_blank">Tiled</a></em>, to handle the complex task of map creation, and applied it to work with the architecture I'd designed.
+            </p>
+            <p>
+                We worked with GitHub and Trello for organization, both of which were put to heavy use to organize the group and keep us on track for the next milestone. Inspiration was taken from AGILE methodology, with frequent team meetings held in-person or via Discord.
+            </p>
+            <p class="links">
+                download at <a href="https://people.rit.edu/feb5657/235/project1/" target="_blank">people.rit.edu/feb5657/235/project1/</a>; requires <a href="https://dotnet.microsoft.com/en-us/download/dotnet/3.1" target="_blank">.NET 3.1</a>
+            </p>
+            <iframe src="https://www.youtube.com/embed/0ohwBLxu0Zc" title="Niraya | 2D Platformer written in MonoGame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <hr>
+        <section>
+            <h2>Tron</h2>
+            <p>
+                Small personal project inspired by gameplay from the eponymous 1980's arcade game <em>Tron</em>.
+            </p>
+            <p>
+                Wrote entire game from scratch over the summer while working at a camp. Playtested this game with many campers to focus down bugs and improve user experience.
+            </p>
+            <p>
+                When creating Tron, my primary focus was creating a polished, clean user experience. The player feels immersed in the consistency and simplicity that the game affords.
+            </p>
+            <p class="links">
+                download source <a href="https://www.dropbox.com/scl/fi/wd2m6dwjwwpg0nwbxlyq4/tron_iridium_v1.5.zip?rlkey=6s3h9guovhe1zga3ldubmmnkb&dl=1" target="_blank">here</a>; requires <a href="https://processing.org/download" target="_blank">Processing</a>
+            </p>
+            <iframe src="https://www.youtube.com/embed/qMa5RrPb8v8" title="TRON | a Tron Clone written in Processing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <hr>
+
+        <section>
+            <h2>osu!maptracker</h2>
+            <p>
+                
+            </p>
+            <p>
+            </p>
+            <p class="links">
+                find on the web at <a href="https://people.rit.edu/feb5657/235/project2/" target="_blank">people.rit.edu/feb5657/235/project2/</a>
+            </p>
+            <img src="images/osu2.png" alt="Map Tracker Web Site">
+            <img src="images/osu1.png" alt="Map Tracker Web Site with Loaded Content">
+        </section>
+        <hr>
+
+        <section>
+            <h2>Sokoban</h2>
+            <p>
+                
+            </p>
+            <p>
+            </p>
+            <p class="links">
+                find on the web at <a href="https://people.rit.edu/feb5657/235/project3/" target="_blank">people.rit.edu/feb5657/235/project3/</a>
+            </p>
+        </section>
+        <hr>
     </main>
     <footer>
-        <hr>
-        <p>Frederick Basken <time>2022</time></p>
+        <p>Frederick Basken <time>2023</time></p>
     </footer>
 </body>
 
