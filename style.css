@@ -1,4 +1,7 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
+/* Styles */
 :root {
     scroll-behavior: smooth;
 }
@@ -38,7 +41,7 @@ body {
     margin: 0 auto;
     padding: 1rem;
 
-    font-family: serif;
+    font-family: Rubik, serif;
     font-size: large;
 }
 
@@ -50,13 +53,28 @@ section {
     width: 100%;
 }
 
+header {
+    font-family: Josefin Sans, serif;
+}
+
 h1 {
     text-align: center;
+
+    margin-top: .3rem;
+
+    position: relative;
 }
 
 h1 span {
     font-size: small;
     font-weight: normal;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+header div {
+    text-align: center;
 }
 
 h2 {
@@ -115,4 +133,20 @@ a:hover {
 
 a:active {
     color: rgb(51, 169, 247);
+}
+
+/* Fancy stuff from https://dev.to/selbekk/how-to-fade-in-content-as-it-scrolls-into-view-10j4 */
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(10vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }

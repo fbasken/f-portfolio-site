@@ -6,27 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="favicon/doc/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon/doc/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />    
 
     <title>portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Frederick Basken - Portfolio<span> (design in progress!)</span></h1>
+        <div>FREDERICK BASKEN</div>
+        <h1>PORTFOLIO<span> (design in progress!)</span></h1>
     </header>
     <main>
         <hr>
-        <section>
+        <section class="fade-in-section is-visible">
             <h2>Niraya</h2>
             <p>
                 Led a four-person team to create a 2D computer game, written in C# using the MonoGame framework (Microsoft XNA) and .NET.
             </p>
             <p>
-                I took on a major leadership role, writing the game’s entire architecture from scratch, including the 2D tilemap framework, kinematic camera, entity logic, and animation system. I integrated a third-party level editor, <em><a href="https://www.mapeditor.org/" target="_blank">Tiled</a></em>, to handle the complex task of map creation, and applied it to work with the architecture I'd designed.
+                I took on a major leadership role, writing the game’s entire architecture from scratch, including the 2D tilemap framework, kinematic camera, entity logic, and animation system. I integrated an external level editor, <em><a href="https://www.mapeditor.org/" target="_blank">Tiled</a></em>, to handle the complex task of map creation, and applied it to work with the architecture I'd designed.
             </p>
             <p>
                 We worked with GitHub and Trello for organization, both of which were put to heavy use to organize the group and keep us on track for the next milestone. Inspiration was taken from AGILE methodology, with frequent team meetings held in-person or via Discord.
@@ -37,7 +41,7 @@
             <iframe src="https://www.youtube.com/embed/0ohwBLxu0Zc" title="Niraya | 2D Platformer written in MonoGame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
         <hr>
-        <section>
+        <section class="fade-in-section">
             <h2>Tron</h2>
             <p>
                 Small personal project inspired by gameplay from the eponymous 1980's arcade game <em>Tron</em>.
@@ -55,7 +59,7 @@
         </section>
         <hr>
 
-        <section>
+        <section class="fade-in-section">
             <h2>osu!maptracker</h2>
             <p>
                 
@@ -74,7 +78,7 @@
         </section>
         <hr>
 
-        <section>
+        <section class="fade-in-section">
             <h2>Sokoban</h2>
             <p>
                 A browser version of the classic game <em>Sokoban</em> written in JavaScript using PixiJS and Bulma.
